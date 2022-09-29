@@ -1,0 +1,31 @@
+<style>
+
+</style>
+
+<script>
+    //elementen uit de DOM (document object model) kunnen als 
+    //variabelen gebruikt worden. HTML bestand noemt 
+    //zichzelf document. Alle visuele onderdelen hebben een 
+    //object structuur. Kunnen we uitlezen via DOM
+    function mijnfunctie() { //eventListener
+        alert("Hij doet het");
+        var x = 10;
+        console.log(x);
+        x++;
+        console.log(x);
+        var element = document.getElementById("titel");
+        element.innerHTML = "nieuwe titel";
+        var y = 25;
+        if (y > 10) {
+            alert("oui is groter");
+        }
+        var input = document.getElementById("input");
+        console.log(input.value);
+    }
+</script>
+<input id="input">
+
+
+
+
+<h1 onclick="mijnfunctie()" id="titel">We zijn van start</h1>
